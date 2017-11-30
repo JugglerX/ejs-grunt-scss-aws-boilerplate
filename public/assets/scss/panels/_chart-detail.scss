@@ -1,0 +1,90 @@
+.chart-detail {
+  table.panel-table {
+    thead {
+      tr {
+        th {
+          input {
+            margin-right: 5px;
+
+          }
+          span {
+            margin-right: 30px;
+            @media #{$medium-only} {
+              margin-right: 20px;
+            }
+            &:last-of-type {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+        }
+      }
+    }
+  }
+  .chart-head {
+    display: block;
+    @media #{$small-only} {
+      display: none;
+    }
+  }
+  .chart-head-mobile {
+    display: none;
+    @media #{$small-only} {
+      display: block;
+    }
+  }
+  .chart-input {
+    display: inline-block;
+    margin-right: 30px;
+    @media #{$medium-only} {
+      margin-right: 10px;
+    }
+    @media #{$small-only} {
+      margin-right: 10px;
+    }
+    @media #{$tiny-only} {
+      display: block;
+    }
+  }
+  .currency-highlight {
+    border: none;
+    padding: 0;
+    margin: 0;
+    div {
+      font-size: 12px;
+      display: inline-block;
+      margin-right: 10px;
+      @media #{$medium-only} {
+        margin-right: 5px;
+      }
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+    .currency-selected {
+      .currency-label {
+        font-weight: 700;
+      }
+      .currency-value {
+        font-weight: 700;
+        color: $primary-color;
+      }
+    }
+    .currency-volume {
+      .currency-label {
+        font-weight: 300;
+      }
+    }
+    .currency-label {
+      margin-right: 5px;
+    }
+    .currency-value {
+      font-weight: 700;
+    }
+  }
+}

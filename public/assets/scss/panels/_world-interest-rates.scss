@@ -1,0 +1,44 @@
+.world-interest-rates {
+  table {
+    border-top: 1px solid #CCC;
+    tbody {
+      tr {
+        td {
+          padding-left: 20px;
+          padding-right: 20px;
+          width: 50%;
+          &:first-of-type {
+            border-right: 1px solid #CCCCCC;
+          }
+          .interest-rate {
+            float: left;
+          }
+          .interest-amount {
+            float: right;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Hide Panel in content area on ipad
+.content {
+  .world-interest-rates  {
+    @media #{$medium-only} {
+      display: none;
+    }
+  }
+}
+
+// Hide Panel in sidebar area on desktop and mobile
+.sidebar {
+  .world-interest-rates  {
+    @media #{$large-up} {
+      display: none;
+    }
+    @media #{$small-only} {
+      display: none;
+    }
+  }
+}

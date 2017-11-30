@@ -1,0 +1,29 @@
+.menu-mobile-search-form {
+  padding: 20px;
+  border-bottom: 1px solid #FFF;
+  background: inherit;
+  @include clearfix();
+  input {
+    width: 80%;
+    float: left;
+    margin: 0;
+  }
+  button {
+    float: right;
+    background: 0;
+    border: 0;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    -webkit-transition: color .3s;
+    -o-transition: color .3s;
+    transition: color .3s;
+    padding: 7px 0px 6px 0px;
+    &:before {
+      @include fa-icon();
+      content: $fa-var-search;
+      color: #FFF;
+      font-size: 20px;
+    }
+  }
+}

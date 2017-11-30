@@ -1,0 +1,33 @@
+.panel-toggle-trigger {
+  display: none;
+  color: $primary-color;
+  cursor: pointer;
+  &:before {
+    @include fa-icon();
+    content: $fa-var-caret-down;
+    cursor: pointer;
+    //padding: 1.5em 2em;
+    background: none;
+    color: $primary-color;
+    padding: 3px 5px 3px 0;
+  }
+  &.open {
+    &:before {
+      content: $fa-var-caret-up;
+      padding: 0px 5px 3px 0;
+    }
+  }
+  @media #{$small-only} {
+    display: block;
+  }
+}
+.panel-toggle-content {
+  @media #{$small-only} {
+    display: none;
+  }
+  &.open {
+    @media #{$small-only} {
+      display: block;
+    }
+  }
+}

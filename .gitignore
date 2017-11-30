@@ -1,0 +1,8 @@
+*.DS_store
+*.sass-cache/
+config.codekit
+.idea
+www
+node_modules
+aws-keys.json
+design

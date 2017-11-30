@@ -1,0 +1,70 @@
+.top {
+  background: $brand-primary;
+  .navbar {
+    border: none;
+  }
+  .navbar-default {
+    background-color: $brand-primary;
+    .navbar-collapse {
+      @media (min-width: $screen-sm-min) {
+        margin-right: -15px;
+        margin-left: -15px;
+      }
+    }
+    .navbar-nav {
+      > .active {
+        > a {
+          background-color: $brand-bright-blue;
+        }
+      }
+      > .open {
+        > a {
+          background-color: $brand-primary;
+        }
+      }
+      > li {
+        > a {
+          color: #FFF;
+        }
+      }
+    }
+  }
+}
+
+.header {
+  background: #FFFFFF;
+  z-index: 2;
+
+  // Header Components
+  .logo {
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 225px;
+    height: 86px;
+    background-image: url('../images/logo.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    @media (max-width: $screen-sm-min) {
+      float: left;
+      width: 205px;
+      height: 14px;
+      background-image: url('../images/logo-mobile.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      margin: 20px;
+    }
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.subheader {
+  background: #FFFFFF;
+  box-shadow: 0 4px 5px -1px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+  border: 1px solid $brand-light-grey;
+}

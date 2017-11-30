@@ -1,0 +1,32 @@
+.feature {
+  text-align: center;
+  .feature-image {
+    display: inline-block;
+    background: $brand-light-grey;
+    height: 100px;
+    width: 100px;
+    padding: 20px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    img {
+      display: inline-block;
+      width: 50px;
+      text-align: center;
+      vertical-align: middle;
+    }
+  }
+  .feature-heading {
+    font-size: 16px;
+    color: $primary-color;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+  .feature-body {
+    line-height: 20px;
+  }
+}
+.features {
+  @include clearfix();
+  margin-bottom: 60px;
+}

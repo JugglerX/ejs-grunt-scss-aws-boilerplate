@@ -1,0 +1,232 @@
+.compare-forex-brokers {
+  .panel-heading {
+    margin-bottom: 16px;
+    padding: 0;
+  }
+  .panel-blurb {
+    padding: 0 10px;
+  }
+  table.panel-table {
+    thead {
+      tr {
+        th {
+          border-top: 1px solid #6591B6;
+          border-bottom: 1px solid #6591B6;
+          padding: 4px 12px;
+          @media #{$small-only} {
+            padding: 4px 4px;
+          }
+          &:first-of-type {
+            a {
+              display: block;
+            }
+          }
+          .cell-title {
+            border-bottom: 1px dotted #FFF;
+            @media #{$small-only} {
+              display: none;
+              border: none;
+            }
+            @media #{$medium-only} {
+              display: none;
+              border: none;
+            }
+          }
+          .cell-title-mobile {
+            border-bottom: 1px dotted #FFF;
+            display: none;
+            @media #{$small-only} {
+              display: block;
+              border: none;
+            }
+          }
+          &.cell-info {
+            border: 1px solid #3f6382;
+            background: #3f6382;
+            cursor: pointer;
+            padding-left: 38px;
+            @media #{$small-only} {
+              background: #6591B6;
+              border: 1px solid #6591B6;
+              cursor: default;
+              text-align: left;
+              padding-left: 14px;
+            }
+            @media #{$medium-only} {
+              background: #6591B6;
+              border: 1px solid #6591B6;
+              cursor: default;
+            }
+            i {
+              margin-left: 10px;
+              @media #{$small-only} {
+                display: none;
+              }
+              @media #{$medium-only} {
+                display: none;
+              }
+            }
+
+          }
+          &.cell-headquarters {
+            border-left: 1px solid #6591B6;
+          }
+          &.cell-founded {
+            @media #{$medium-only} {
+              display: none;
+            }
+            @media #{$small-only} {
+              display: none;
+            }
+          }
+          &.cell-regulation {
+            border-right: 1px solid #6591B6;
+            @media #{$small-only} {
+              display: none;
+            }
+          }
+          &.cell-min-account {
+            border-left: 1px solid #6591B6;
+          }
+          &.cell-min-contract {
+            @media #{$small-only} {
+              display: none;
+            }
+          }
+          &.cell-max-lev {}
+          &.cell-pairs {
+            @media #{$small-only} {
+              display: none;
+            }
+          }
+          &.cell-ecn {
+            border-right: 1px solid #6591B6;
+            @media #{$small-only} {
+              display: none;
+            }
+          }
+          &.cell-regulated {
+            display: none;
+            border-right: 1px solid #6591B6;
+            @media #{$small-only} {
+              display: table-cell;
+            }
+          }
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          padding: 8px 12px;
+          @media #{$tiny-only} {
+            padding: 4px 4px;
+          }
+          &.cell-info {
+            width: 260px;
+            vertical-align: middle;
+            @media #{$medium-only} {
+              width: auto;
+            }
+            @media #{$small-only} {
+              width: auto;
+            }
+            .cell-info-checkbox {
+              vertical-align: middle;
+              display: inline-block;
+              padding-right: 10px;
+              @media #{$medium-only} {
+                display: none;
+              }
+              @media #{$small-only} {
+                display: none;
+              }
+            }
+            .cell-info-logo {
+              vertical-align: middle;
+              display: inline-block;
+              padding-right: 10px;
+              min-width: 90px;
+              @media #{$medium-only} {
+                padding-right: 0;
+              }
+              @media #{$small-only} {
+                padding-right: 0;
+                min-width: 80px;
+              }
+              img {
+                width: 80px;
+                height: 32px;
+              }
+            }
+            .cell-info-links {
+              vertical-align: middle;
+              display: inline-block;
+              @media #{$medium-only} {
+                display: none;
+              }
+              @media #{$small-only} {
+                display: none;
+              }
+              a {
+                display: block;
+                text-decoration: underline;
+              }
+            }
+          }
+          &.cell-headquarters {
+            @media #{$medium-only} {
+              border-right: 1px solid #dadada;
+            }
+          }
+          &.cell-founded {
+            text-align: center;
+            @media #{$medium-only} {
+              display: none;
+            }
+            @media #{$small-only} {
+              display: none;
+            }
+          }
+          &.cell-regulation {
+            @media #{$small-only} {
+              display: none;
+            }
+          }
+          &.cell-min-account {
+            text-align: center;
+          }
+          &.cell-min-contract  {
+            text-align: center;
+            @media #{$small-only} {
+              display: none;
+            }
+          }
+          &.cell-max-lev {
+            text-align: center;
+          }
+          &.cell-pairs {
+            text-align: center;
+            @media #{$small-only} {
+              display: none;
+            }
+          }
+          &.cell-ecn {
+            text-align: center;
+            @media #{$small-only} {
+              display: none;
+            }
+          }
+          &.cell-regulated {
+            text-align: center;
+            display: none;
+            @media #{$small-only} {
+              display: table-cell;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}

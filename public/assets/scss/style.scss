@@ -1,0 +1,95 @@
+// Settings
+@import 'settings';
+@import 'reset';
+
+// Font
+//@import 'font-awesome/font-awesome';
+@import 'icomoon/icomoon';
+
+// Frameworks
+@import 'bootstrap4/bootstrap';
+
+// Grid
+//@import 'grid/clearfix';
+//@import 'grid/breakpoints';
+//@import 'grid/container';
+
+// Base
+//@import 'base/responsive-image';
+//@import 'base/ellipsis';
+//@import 'base/type';
+//@import 'base/button';
+//@import 'base/link';
+//@import 'base/form';
+//@import 'base/form-label';
+//@import 'base/form-textarea';
+//@import 'base/form-submit';
+//@import 'base/form-select';
+//@import 'base/form-checkbox';
+
+// Libraries
+//@import 'libraries/tooltipster/tooltipster';
+//@import 'libraries/tooltipster/tooltipster-theme-default';
+//@import 'libraries/hamburgers/hamburgers';
+//@import 'libraries/mmenu/mmenu';
+//@import 'libraries/owlcarousel/owl-load';
+@import 'libraries/slick/slick-load';
+
+// Components
+@import 'components/header';
+@import 'components/footer';
+@import 'components/buttons';
+@import 'components/hero';
+@import 'components/card';
+@import 'components/feature';
+@import 'components/main';
+@import 'components/search';
+@import 'components/yamm';
+
+//@import 'panels/panel';
+//@import 'panels/panel-table';
+//@import 'panels/panel-tabs';
+//@import 'panels/panel-more-link';
+//@import 'panels/panel-toggle';
+//@import 'panels/panel-data';
+//@import 'panels/page-swaps';
+//@import 'panels/page-detail';
+//@import 'panels/detail';
+//@import 'panels/live-rates';
+//@import 'panels/bonuses';
+//@import 'panels/stock-exchange-hours';
+//@import 'panels/world-interest-rates';
+//@import 'panels/regulators';
+//@import 'panels/quick-links';
+//@import 'panels/recommended-brokers';
+//@import 'panels/recommended-brokers-carousel';
+//@import 'panels/currency-search';
+//@import 'panels/todays-swaps';
+//@import 'panels/compare-brokers';
+//@import 'panels/compare-swaps';
+//@import 'panels/more-bonuses';
+//@import 'panels/broker-info';
+//@import 'panels/swap-comparison';
+//@import 'panels/volume-comparison';
+//@import 'panels/currency-highlight';
+//@import 'panels/chart-detail';
+//@import 'panels/advanced-search';
+//@import 'panels/reviews';
+//@import 'panels/account-details';
+//@import 'panels/different-currencies';
+
+
+body {
+  margin: 0;
+  padding: 0;
+  color: $brand-steel;
+  font-family: $base-font;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: 400;
+  background: #EAEBED;
+}
+
+* {
+  box-sizing: border-box;
+}

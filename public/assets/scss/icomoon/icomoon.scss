@@ -1,0 +1,11 @@
+@import "variables";
+@import "icons";
+@import "mixins";
+
+.icomoon-example {
+  &:before {
+    @include ico-icon();
+    content: $ico-angle-right;
+    color: #333;
+  }
+}

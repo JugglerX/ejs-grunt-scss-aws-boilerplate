@@ -1,0 +1,34 @@
+$grey: #CCCCCC;
+$red: #ec4813;
+$red-light: #FB89A2;
+$green: #007908;
+$green-light: #8BEE82;
+
+.data-grey {
+  color: $grey !important;
+}
+.data-red {
+  color: $red !important;
+}
+.data-green {
+  color: $green !important;
+}
+.rate-same {
+  color: $green !important;
+}
+.rate-up {
+  color: $primary-color !important;
+}
+.rate-down {
+  color: $red !important;
+}
+
+.data-grey-bg {
+  background-color: $grey !important;
+}
+.data-red-bg {
+  background-color: $red-light !important;
+}
+.data-green-bg {
+  background-color: $green-light !important;
+}

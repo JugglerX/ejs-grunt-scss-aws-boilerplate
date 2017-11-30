@@ -1,0 +1,49 @@
+.swap-comparison {
+  table.panel-table {
+    thead {
+      tr {
+        th {
+          &:nth-of-type(1) {
+          }
+        }
+      }
+      tr.row-light {
+        th {
+          @media #{$medium-only} {
+            display: none;
+          }
+          @media #{$small-only} {
+            display: none;
+          }
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          &:nth-of-type(1) {
+            input {
+              @media #{$small-only} {
+                display: none;
+              }
+            }
+          }
+          &:nth-of-type(n+2) {
+            @media #{$medium-only} {
+              display: none;
+            }
+            @media #{$small-only} {
+              display: none;
+            }
+          }
+          input {
+            margin-right: 10px;
+            @media #{$tiny-only} {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}

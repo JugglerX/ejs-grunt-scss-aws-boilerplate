@@ -1,0 +1,19 @@
+name: test
+
+excludeDir:
+  - css
+
+assets:
+  - assets/css
+
+sidebar:
+  background: "#5585AD"
+  textColor: "#fff"
+
+headHtml: |
+  <link rel="stylesheet" href="assets/css/style.css">
+
+bodyHtml: |
+
+order:
+  - +Getting Started

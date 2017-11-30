@@ -1,0 +1,47 @@
+.btn-primary {
+  @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+  font-size: 14px;
+  &:hover {
+    color: #FFF;
+    background-color: $brand-bright-blue;
+    border-color: $brand-bright-blue;
+  }
+}
+
+.btn-secondary {
+  color: $primary-color;
+  background-color: transparent;
+  border-color: $brand-primary;
+  font-size: 14px;
+  &:hover,
+  &:focus,
+  &.focus {
+    color: #FFF;
+    background-color: $brand-primary;
+    border-color: $brand-primary;
+  }
+}
+
+.btn-steel {
+  color: #FFF;
+  background-color: $brand-steel;
+  border-color: $brand-steel;
+  font-size: 14px;
+  &:hover {
+    color: #FFF;
+    background-color: $brand-bright-blue;
+    border-color: $brand-bright-blue;
+  }
+}
+
+.btn-invert {
+  color: #FFF;
+  background-color: transparent;
+  border-color: #FFF;
+  font-size: 14px;
+  &:hover {
+    color: $brand-primary;
+    background-color: #FFF;
+    border-color: #FFF;
+  }
+}

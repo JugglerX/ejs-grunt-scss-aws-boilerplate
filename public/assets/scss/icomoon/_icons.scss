@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('#{$icomoon-font-path}/icomoon.eot?t1r1vy');
+    src:  url('#{$icomoon-font-path}/icomoon.eot?t1r1vy#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/icomoon.ttf?t1r1vy') format('truetype'),
+    url('#{$icomoon-font-path}/icomoon.woff?t1r1vy') format('woff'),
+    url('#{$icomoon-font-path}/icomoon.svg?t1r1vy#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="ico-"], [class*=" ico-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ico-bookmarks {
+    &:before {
+        content: $ico-bookmarks;
+    }
+}
+.ico-box1 {
+    &:before {
+        content: $ico-box1;
+    }
+}
+.ico-cart {
+    &:before {
+        content: $ico-cart;
+    }
+}
+.ico-chat {
+    &:before {
+        content: $ico-chat;
+    }
+}
+.ico-config {
+    &:before {
+        content: $ico-config;
+    }
+}
+.ico-date {
+    &:before {
+        content: $ico-date;
+    }
+}
+.ico-hourglass {
+    &:before {
+        content: $ico-hourglass;
+    }
+}
+.ico-id {
+    &:before {
+        content: $ico-id;
+    }
+}
+.ico-joy {
+    &:before {
+        content: $ico-joy;
+    }
+}
+.ico-photo-gallery {
+    &:before {
+        content: $ico-photo-gallery;
+    }
+}
+.ico-piggy {
+    &:before {
+        content: $ico-piggy;
+    }
+}
+.ico-shield {
+    &:before {
+        content: $ico-shield;
+    }
+}
+.ico-star {
+    &:before {
+        content: $ico-star;
+    }
+}
+.ico-ticket {
+    &:before {
+        content: $ico-ticket;
+    }
+}
+.ico-tools {
+    &:before {
+        content: $ico-tools;
+    }
+}
+.ico-user-female {
+    &:before {
+        content: $ico-user-female;
+    }
+}
+.ico-user {
+    &:before {
+        content: $ico-user;
+    }
+}
+.ico-users {
+    &:before {
+        content: $ico-users;
+    }
+}
+.ico-angle-down {
+    &:before {
+        content: $ico-angle-down;
+    }
+}
+.ico-angle-left {
+    &:before {
+        content: $ico-angle-left;
+    }
+}
+.ico-angle-right {
+    &:before {
+        content: $ico-angle-right;
+    }
+}
+.ico-angle-up {
+    &:before {
+        content: $ico-angle-up;
+    }
+}
+.ico-caret-down {
+    &:before {
+        content: $ico-caret-down;
+    }
+}
+.ico-caret-left {
+    &:before {
+        content: $ico-caret-left;
+    }
+}
+.ico-caret-right {
+    &:before {
+        content: $ico-caret-right;
+    }
+}
+.ico-caret-up {
+    &:before {
+        content: $ico-caret-up;
+    }
+}
+.ico-envelope {
+    &:before {
+        content: $ico-envelope;
+    }
+}
+.ico-facebook {
+    &:before {
+        content: $ico-facebook;
+    }
+}
+.ico-search {
+    &:before {
+        content: $ico-search;
+    }
+}
+.ico-twitter {
+    &:before {
+        content: $ico-twitter;
+    }
+}
+.ico-youtube-play {
+    &:before {
+        content: $ico-youtube-play;
+    }
+}
+

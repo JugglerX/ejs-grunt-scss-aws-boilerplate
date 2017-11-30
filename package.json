@@ -1,0 +1,39 @@
+{
+  "name": "static_site_boilerplate",
+  "version": "1.5.0",
+  "description": "Static Site Boilerplate",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-aws-s3": "^0.14.5",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-cleanempty": "^1.0.4",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-jshint": "~1.0.0",
+    "grunt-contrib-uglify": "~1.0.1",
+    "grunt-contrib-watch": "~1.0.0",
+    "grunt-decomment": "^0.2.4",
+    "grunt-dom-munger": "^3.4.0",
+    "grunt-ejs": "^0.3.0",
+    "grunt-npm-command": "^0.1.2",
+    "grunt-sass": "1.2.1",
+    "grunt-string-replace": "^1.3.1",
+    "http-server": "0.9.0",
+    "load-grunt-tasks": "~3.5.0",
+    "stylemark": "^0.5.9",
+    "time-grunt": "^1.2.2"
+  },
+  "scripts": {
+    "bs": "browser-sync start --server 'public' --files 'scss/*.scss'",
+    "static": "./node_modules/.bin/http-server -a localhost -p 8000 -o -c-1 www",
+    "stylemark": "stylemark -i public -o docs -c stylemark.yml -w -b 5000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JugglerX/forexchurch.git"
+  },
+  "author": "Robert Austin"
+}

@@ -1,0 +1,36 @@
+.panel-more-link {
+  @include clearfix();
+  padding: 4px;
+  border: 1px solid #CCC;
+  border-top: none;
+  text-align: right;
+  @media #{$small-only} {
+    border: none;
+  }
+  a {
+    font-weight: 700;
+    display: inline-block;
+    &:before {
+      @include fa-icon();
+      content: $fa-var-angle-double-right;
+      margin-right: 5px;
+    }
+  }
+}
+
+.panel-more-toggle {
+  @include clearfix();
+  padding: 4px;
+  border-top: none;
+  text-align: right;
+  //a {
+  //  font-weight: 300;
+  //  display: inline-block;
+  //  &:before {
+  //    @include fa-icon();
+  //    content: $fa-var-toggle-down;
+  //    font-weight: 300;
+  //    margin-right: 5px;
+  //  }
+  //}
+}

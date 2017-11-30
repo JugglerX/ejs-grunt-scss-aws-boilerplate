@@ -1,0 +1,181 @@
+/*!
+ * Yamm!3 - Yet another megamenu for Bootstrap 3
+ * http://geedmo.github.com/yamm3
+ *
+ * @geedmo - Licensed under the MIT license
+ */
+
+//-----------------------------
+//  Yamm Styles
+//-----------------------------
+
+.yamm {
+
+  // reset positions
+  .nav, .collapse, .dropup, .dropdown {
+    position: static;
+  }
+
+  // propagate menu position under container for fw navbars
+  .container {
+    position: relative;
+  }
+
+  // by default aligns menu to left
+  .dropdown-menu {
+    left: auto;
+  }
+
+  // Content with padding
+  .yamm-content {
+    padding: 20px 30px;
+  }
+
+  .yamm-wrap {
+    padding: 15px;
+  }
+
+  // Fullwidth menu
+  .dropdown.yamm-fw .dropdown-menu {
+    left: 0; right: 0;
+  }
+
+}
+.yamm.navbar-default {
+  border: none;
+  .navbar-collapse {
+    padding: 0;
+  }
+  ul.navbar-nav {
+    float: right;
+    > li {
+      > a {
+        border: 1px solid $brand-bone;
+        border-right: none;
+        padding: 44px 30px 44px 30px;
+        color: $brand-primary;
+        text-transform: uppercase;
+        &:last-of-type {
+          border-right: 1px solid $brand-bone;
+        }
+        .angle {
+          position: absolute;
+          width: 100%;
+          left: 0;
+          bottom: 0;
+          text-align: center;
+          &:after {
+            @include ico-icon();
+            content: $ico-angle-down;
+            color: $brand-bone;
+          }
+        }
+      }
+      &.open {
+        > a {
+          background-color: $brand-bone;
+          color: $brand-primary;
+          .angle {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            text-align: center;
+            &:after {
+              @include ico-icon();
+              content: $ico-angle-up;
+              color: $brand-primary;
+            }
+          }
+        }
+      }
+      > .dropdown-menu {
+        padding: 0;
+        margin: 0;
+        background-color: #fff;
+        border: 1px solid $brand-bone;
+        box-shadow: none;
+        > li {
+          > a {
+            padding: 20px;
+            border-bottom: 1px solid $brand-bone;
+          }
+        }
+      }
+    }
+  }
+  ul.nav-tabs {
+    border: none;
+    margin: 0;
+    > li {
+      float: none;
+      > a {
+        color: $brand-primary;
+        padding: 15px 20px 15px 20px;
+        margin: 0;
+        border-bottom: 1px solid $brand-bone;
+        .ico {
+          vertical-align: middle;
+          margin-right: 15px;
+          &:before {
+            font-size: 28px;
+          }
+        }
+        &:after {
+          @include ico-icon();
+          content: $ico-angle-right;
+          float: right;
+          line-height: 25px;
+        }
+      }
+      &.active {
+        > a {
+          background-color: $brand-bone;
+          color: $brand-steel;
+        }
+      }
+    }
+  }
+  ul.mm-list {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+    list-style: none;
+  }
+  .mm-image-box {
+    border: 1px solid $brand-bone;
+    padding: 20px;
+  }
+}
+
+.mm-buy {
+   .mm-buy-left {
+     padding-right: 0;
+
+   }
+   .mm-buy-right {
+     border-left: 1px solid $brand-bone;
+     padding-top: 15px;
+     padding-bottom: 15px;
+   }
+
+   h2 {
+     font-size: 15px;
+     text-transform: uppercase;
+     border-bottom: 1px solid $brand-bone;
+     margin: 0;
+     margin-bottom: 20px;
+     padding-bottom: 20px;
+   }
+ }
+
+.mm-my-gimko {
+  h2 {
+    font-size: 15px;
+    text-transform: uppercase;
+    border-bottom: 1px solid $brand-bone;
+    margin: 0;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+}

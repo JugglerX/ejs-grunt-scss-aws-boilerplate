@@ -1,0 +1,91 @@
+.footer {
+  background: $brand-navy;
+  padding: 30px 0 40px 0;
+  @include clearfix();
+  .footer-top {
+    @include clearfix();
+  }
+  .footer-menu-heading {
+    font-size: 14px;
+    font-weight: 700;
+    color: $brand-steel;
+    text-transform: uppercase;
+  }
+  .footer-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      color: #ecf0f1;
+      a {
+        color: #ecf0f1;
+        line-height: 24px;
+        &:hover {
+          color: $brand-pale;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .footer-menu-bottom {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      color: #ecf0f1;
+      display: inline-block;
+      margin-right: 10px;
+      a {
+        color: #ecf0f1;
+        &:hover {
+          color: $brand-pale;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .footer-divider {
+    height: 1px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-top: 1px solid $brand-steel;
+  }
+  .newsletter-heading {
+      font-size: 14px;
+      font-weight: 700;
+      color: $brand-steel;
+      text-transform: uppercase;
+  }
+  .newsletter-body {
+    color: #bdc3c7;
+  }
+  .newsletter {
+    .form-control {
+      padding: 10px 12px;
+      height: 42px;
+    }
+    .btn {
+      height: 42px;
+    }
+  }
+  .copyright-terms {
+    float: left;
+    margin-right: 20px;
+  }
+  .social {
+    float: right;
+
+    .ico {
+      color: #ecf0f1;
+      font-size: 16px;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+    .follow-us {
+      vertical-align: middle;
+      display: inline-block;
+      line-height: 14px;
+    }
+  }
+}
+

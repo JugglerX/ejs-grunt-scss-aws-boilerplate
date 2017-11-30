@@ -1,0 +1,29 @@
+.heros {
+  display: flex;
+  margin-bottom: 60px;
+
+}
+.hero {
+  flex: 1 1 0;
+  min-height: 400px;
+  background-color: $brand-primary;
+  background-image: url("../images/tile-bg-primary.jpg");
+  text-align: center;
+  padding: 140px 50px 50px 50px;
+  h2 {
+    margin: 0;
+    margin-bottom: 20px;
+    color: #FFF;
+    text-transform: uppercase;
+  }
+  &:nth-child(2) {
+    background-color: $brand-navy;
+    background-image: url("../images/tile-bg-navy.jpg");
+  }
+  &.hero-brand-primary {
+
+  }
+  &.hero-brand-navy {
+
+  }
+}

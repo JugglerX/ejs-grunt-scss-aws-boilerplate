@@ -1,0 +1,49 @@
+.regulators {
+  table {
+    position: relative;
+    @media #{$medium-only} {
+      // allows table cells to use overflow hidden and ellipse, truncating long text.
+      table-layout: fixed;
+    }
+    @media #{$small-only} {
+      table-layout: fixed;
+    }
+    thead {
+      th {
+        &:nth-child(1) {
+          width: 30%;
+        }
+        &:nth-child(2) {
+          width: 60%;
+        }
+        &:nth-child(3) {
+          width: 10%;
+        }
+      }
+    }
+    tbody {
+      tr {
+      }
+      td {
+        &:nth-child(1) {
+          width: 30%;
+        }
+        &:nth-child(2) {
+          width: 60%;
+          @include ellipsis;
+        }
+        &:nth-child(3) {
+          width: 10%;
+        }
+      }
+    }
+  }
+  .panel-table-scroll {
+    height: 480px;
+    border-bottom: 2px solid #CCC;
+    overflow-y:  scroll;
+    @media #{$small-only} {
+      height: 300px;
+    }
+  }
+}

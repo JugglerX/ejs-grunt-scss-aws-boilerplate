@@ -1,0 +1,22 @@
+.broker-info {
+  table.panel-table {
+    margin-bottom: 20px;
+    thead,
+    tbody {
+      tr {
+        th,
+        td {
+          &:first-of-type {
+            width: 288px;
+            @media #{$medium-only} {
+              width: 196px;
+            }
+            @media #{$small-only} {
+              width: 40%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

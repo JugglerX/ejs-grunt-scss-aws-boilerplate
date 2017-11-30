@@ -1,0 +1,13 @@
+@mixin ico-icon() {
+  display: inline-block;
+  font: normal normal normal 14px/1 "icomoon";
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ico {
+  @include ico-icon();
+}
+

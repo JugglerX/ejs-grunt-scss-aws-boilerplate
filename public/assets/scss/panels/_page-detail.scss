@@ -1,0 +1,25 @@
+body.page-detail {
+  .main {
+    .content {
+      .panel-bonuses-small {
+        display: none;
+        @media #{$small-only} {
+          display:block;
+        }
+      }
+    }
+    .sidebar {
+      @media #{$medium-only} {
+      }
+      @media #{$small-only} {
+        display: none;
+      }
+
+    }
+  }
+  .reviews {
+    @media #{$small-only} {
+      //display: none;
+    }
+  }
+}

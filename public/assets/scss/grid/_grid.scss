@@ -1,0 +1,114 @@
+// ==========================================================================
+// Grid
+// ==========================================================================
+
+$include-html-grid-classes: true;
+$row-width: 1280px;
+$total-columns: 12;
+$column-gutter: 20px;
+
+//
+// Helpers
+// ==========================================================================
+@function grid-calc($col-number, $total-columns) {
+  @return percentage(($col-number / $total-columns));
+}
+
+//
+// Row
+// ==========================================================================
+@mixin grid-row($behavior: false) {
+  @include clearfix();
+  @if $behavior == nest {
+    width: auto;
+    max-width: none;
+    margin-top: 0;
+    margin-right: -($column-gutter/2);
+    margin-bottom: 0;
+    margin-left: -($column-gutter/2);
+  } @else if $behavior == collapse {
+    width: 100%;
+    max-width: $row-width;
+    margin: 0;
+  } @else if $behavior == nest-collapse {
+    width: auto;
+    max-width: none;
+    margin: 0;
+  } @else {
+    width: 100%;
+    max-width: $row-width;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+  }
+}
+
+//
+// Column
+// ==========================================================================
+@mixin grid-column($columns: false, $collapse: false) {
+  float: left;
+
+  // If collapsed, get rid of gutter padding
+  @if $collapse {
+    padding-right: 0;
+    padding-left: 0;
+  } @else if $collapse == false {
+    padding-right: ($column-gutter / 2);
+    padding-left: ($column-gutter / 2);
+  }
+
+  // If a column number is given, calculate width
+  @if $columns {
+    width: grid-calc($columns, $total-columns);
+  }
+}
+
+//
+// Generate Grid HTML Classes
+// ==========================================================================
+@mixin grid-html-classes($size) {
+  @for $i from 1 through $total-columns {
+    .#{$size}-#{$i} {
+      @include grid-column($columns: $i, $collapse: null);
+    }
+  }
+}
+
+@if $include-html-grid-classes {
+  // Row
+  .row {
+    @include grid-row;
+    .row {
+      @include grid-row($behavior: nest);
+    }
+
+  }
+  .row-collapse {
+    @include grid-row($behavior: collapse);
+  }
+
+  // Column
+  .column {
+    @include grid-column($columns: $total-columns);
+  }
+
+  // Generate Column Classes
+  @media #{$small-up} {
+    @include grid-html-classes('small');
+  }
+
+  @media #{$medium-up} {
+    @include grid-html-classes('medium');
+  }
+
+  @media #{$large-up} {
+    @include grid-html-classes('large');
+  }
+
+  @media #{$extra-large-up} {
+    @include grid-html-classes('extra-large');
+  }
+}
+

@@ -1,0 +1,22 @@
+.hamburger {
+  display: none;
+  outline: none;
+  padding: 17px 15px 13px 15px;
+  @media (min-width: $screen-sm-min) {
+    display: block;
+  }
+  float: right;
+  //background: $primary-color;
+  .hamburger-inner,
+  .hamburger-inner::before,
+  .hamburger-inner::after {
+    background: #FFF;
+  }
+  &.is-active {
+    .hamburger-inner,
+    .hamburger-inner::before,
+    .hamburger-inner::after {
+      background: #e61221;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.quick-links {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 5px;
+    li {
+      list-style: none;
+      &:before {
+        @include fa-icon();
+        content: $fa-var-caret-right;
+        color: $primary-color;
+        margin-right: 10px;
+      }
+      &.quick-link-blank {
+        &:before {
+          content: "";
+        }
+      }
+      a {
+
+      }
+      span {
+        float: right;
+      }
+    }
+  }
+}
+
+// Hide Panel in sidebar area on mobile and ipad
+.sidebar {
+  .quick-links  {
+    @media #{$medium-only} {
+      display: none;
+    }
+    @media #{$small-only} {
+      display: none;
+    }
+  }
+}

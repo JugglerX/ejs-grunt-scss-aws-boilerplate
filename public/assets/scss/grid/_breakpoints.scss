@@ -1,0 +1,97 @@
+// ==========================================================================
+// Breakpoints
+// ==========================================================================
+// https://mydevice.io/devices/
+// https://medium.freecodecamp.org/the-100-correct-way-to-do-css-breakpoints-88d6a5ba1862
+
+//
+// Breakpoints
+// ==========================================================================
+$tiny-range: (0, 420px);
+$small-range: (0, 767px);
+$small-medium-range: (421px, 767px);
+$medium-range: (768px, 1024px);
+$large-range: (1025px, 1290px);
+$extra-large-range: (1291px, 5000px);
+
+
+//
+// Media Query Variables
+// ==========================================================================
+@function lower-bound($range) {
+  @return nth($range, 1);
+}
+
+@function upper-bound($range) {
+  @return nth($range, 2);
+} 
+
+$screen: 'only screen';
+$landscape: '(orientation: landscape)';
+$portrait: '(orientation: portrait)';
+$tiny-only: 'only screen and (max-width:#{upper-bound($tiny-range)})';
+$small-up: 'only screen';
+$small-only: 'only screen and (max-width:#{upper-bound($small-range)})';
+$small-medium-up: 'only screen and (min-width:#{lower-bound($small-medium-range)})';
+$small-medium-only: 'only screen and (min-width:#{lower-bound($small-medium-range)}) and (max-width:#{upper-bound($small-medium-range)})';
+$medium-up: '#{$screen} and (min-width:#{lower-bound($medium-range)})';
+$medium-only: '#{$screen} and (min-width:#{lower-bound($medium-range)}) and (max-width:#{upper-bound($medium-range)})';
+$large-up: '#{$screen} and (min-width:#{lower-bound($large-range)})';
+$large-only: '#{$screen} and (min-width:#{lower-bound($large-range)}) and (max-width:#{upper-bound($large-range)})';
+$extra-large-up: '#{$screen} and (min-width:#{lower-bound($extra-large-range)})';
+$extra-large-only: '#{$screen} and (min-width:#{lower-bound($extra-large-range)}) and (max-width:#{upper-bound($extra-large-range)})';
+
+
+//
+// Breakpoint Debugger (displays breakpoint name in bottom right corner of website)
+// ==========================================================================
+@mixin display-breakpoint {
+  &:after {
+    position: fixed;
+    z-index: 999;
+    right: 0;
+    bottom: 0;
+    padding: 0.5em 1em;
+    text-align: center;
+    opacity: 0.8;
+    color: #FFFFFF;
+    background: #000000;
+    @media #{$small-up} {
+      content: 'small-up';
+      background: #FFA500;
+    }
+    @media #{$small-only} {
+      content: 'small - #{$small-range}';
+      background: #FFA500;
+    }
+    @media #{$tiny-only} {
+      content: 'tiny - #{$tiny-range}';
+      background: #FF0000;
+    }
+    @media #{$medium-up} {
+      content: 'medium-up';
+      background: #008000;
+    }
+    @media #{$medium-only} {
+      content: 'medium - #{$medium-range})';
+      background: #008000;
+    }
+    @media #{$large-up} {
+      content: 'large-up';
+      background: #0000FF;
+    }
+    @media #{$large-only} {
+      content: 'large - #{$large-range}';
+      background: #0000FF;
+    }
+    @media #{$extra-large-up} {
+      content: 'extra-large-up';
+      background: #0000FF;
+    }
+    @media #{$extra-large-only} {
+      content: 'extra-large - #{$extra-large-range}';
+      background: #0000FF;
+    }
+  }
+}
+

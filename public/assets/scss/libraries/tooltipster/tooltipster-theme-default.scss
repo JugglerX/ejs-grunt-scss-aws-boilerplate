@@ -1,0 +1,13 @@
+.tooltipster-sidetip .tooltipster-box {
+	background: $tooltip-background-color;
+	border: $tooltip-background-color;
+	border-radius: 4px;
+}
+
+.tooltipster-sidetip.tooltipster-top .tooltipster-arrow-background {
+	border-top-color: $tooltip-background-color;
+}
+
+.tooltip {
+	cursor: pointer;
+}

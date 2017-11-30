@@ -1,0 +1,31 @@
+.mm-menu {
+  top: 54px;
+  display: none;
+  color: #FFF;
+  font-size: 18px;
+  z-index: 30;
+  &.open {
+    display: block;
+  }
+  &.mm-theme-dark {
+    background: rgba(0, 0, 0, 0.7)
+  }
+  .mm-navbar {
+    //height: 54px;
+  }
+  .mm-panels > .mm-panel > .mm-navbar + .mm-listview {
+    //margin-top: -10px;
+  }
+  .mm-panels {
+    top: 77px;
+  }
+  .mm-listview {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: lighter;
+  }
+}
+.mm-wrapper.open {
+  position: fixed;
+  width: 100%;
+}

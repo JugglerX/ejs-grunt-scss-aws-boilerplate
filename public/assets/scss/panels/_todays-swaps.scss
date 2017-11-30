@@ -1,0 +1,28 @@
+.todays-swaps {
+  .panel-heading {
+    margin-bottom: 20px;
+  }
+  table.panel-table {
+    position: relative;
+    thead {
+      th {
+        &:nth-child(1) {
+          width: 100px;
+        }
+        &:nth-child(3) {
+        }
+      }
+    }
+    tbody {
+      tr {
+      }
+      td {
+        &:nth-child(1) {
+          width: 100px;
+        }
+        &:nth-child(3) {
+        }
+      }
+    }
+  }
+}

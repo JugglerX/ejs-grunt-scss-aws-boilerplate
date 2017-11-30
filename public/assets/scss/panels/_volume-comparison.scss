@@ -1,0 +1,34 @@
+.volume-comparison {
+  table.panel-table {
+    thead {
+      tr.row-light {
+        th {
+          @media #{$medium-only} {
+            display: none;
+          }
+          @media #{$small-only} {
+            display: none;
+          }
+        }
+      }
+    }
+    tbody {
+      tr {
+        td {
+          &:nth-of-type(n+2) {
+            @media #{$medium-only} {
+              display: none;
+            }
+            @media #{$small-only} {
+              display: none;
+            }
+          }
+          input {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+}

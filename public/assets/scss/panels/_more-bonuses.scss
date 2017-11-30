@@ -1,0 +1,12 @@
+.more-bonuses {
+  display: none;
+  text-align: center;
+  margin-bottom: 15px;
+  @media #{$small-only} {
+    display: block;
+  }
+  .cta-more-bonuses {
+    @include btn-cta();
+
+  }
+}

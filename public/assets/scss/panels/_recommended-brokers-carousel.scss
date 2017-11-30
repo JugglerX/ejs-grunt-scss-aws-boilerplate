@@ -1,0 +1,29 @@
+.recommended-brokers-carousel {
+  @media #{$medium-up} {
+    display: none;
+  }
+  .brokers {
+    .broker {
+      img {
+        @include responsive-image();
+      }
+      h2 {
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 15px;
+        color: $primary-color;
+      }
+      h3 {
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        color: #000000;
+      }
+      p {
+        color: #666666;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

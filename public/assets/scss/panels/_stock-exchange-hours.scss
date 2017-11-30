@@ -1,0 +1,57 @@
+.stock-exchange-hours {
+  table {
+    position: relative;
+    thead {
+      th {
+        &:nth-child(1) {
+        }
+        &:nth-child(3) {
+        }
+      }
+    }
+    tbody {
+      tr {
+      }
+      td {
+        &:nth-child(1) {
+          width: 220px;
+          img {
+            float:left;
+            margin-top: 2px;
+          }
+          span {
+            display: block;
+            margin-left: 22px;
+
+          }
+        }
+        &:nth-child(2) {
+          text-align: center;
+        }
+        &:nth-child(3) {
+        }
+      }
+    }
+  }
+}
+
+// Hide Panel in content area on ipad
+.content {
+  .stock-exchange-hours  {
+    @media #{$medium-only} {
+      display: none;
+    }
+  }
+}
+
+// Hide Panel in sidebar area on desktop and mobile
+.sidebar {
+  .stock-exchange-hours  {
+    @media #{$large-up} {
+      display: none;
+    }
+    @media #{$small-only} {
+      display: none;
+    }
+  }
+}

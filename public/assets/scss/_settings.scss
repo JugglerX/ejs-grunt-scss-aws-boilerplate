@@ -1,0 +1,43 @@
+/*
+ * Theme Variables
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Roboto');
+
+
+$primary-color: #1c75bc;
+$primary-color-alt: #2a4999;
+$secondary-color: #232A2C;
+
+$white: #FFFFFF;
+$black: #000000;
+$gray: #666666;
+
+$brand-primary:         #1c75bc;
+$brand-bright-blue:     #2a4999;
+$brand-steel:           #6d748b;
+$brand-pale:            #b9c0d6;
+$brand-light-grey:      #ecf0f1;
+$brand-navy:            #393d59;
+$brand-bone:            #ecf0f1;
+$brand-danger:          #d9534f !default;
+
+$base-font-size: 14px;
+$base-line-height: 18px;
+$base-font-color: $brand-steel;
+$base-font: 'Lato', 'helvetica', 'arial';
+
+$link-color: $primary-color;
+$link-color-hover: lighten($primary-color, 10%);
+
+$form-font-size: 12px;
+$form-line-height: 16px;
+$form-padding: 4px;
+$form-height: 26px;
+
+$button-font-size: $base-font-size;
+$button-font-family: $base-font;
+
+
+// Tooltip
+$tooltip-background-color:  #252525;
